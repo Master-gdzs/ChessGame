@@ -78,8 +78,9 @@ public class Player {
         ArrayList<Player> players = new ArrayList();
         players.add(new Player("Beth Harmon", "bethharmon@gmail.com", ColorPiece.White, 2000, 20));
         CreatePieces createPieces = new CreatePieces();
-        createPieces.createKing();
+        createPieces.createWhite();
         players.add(new Player("Vasiliy Borgov", "vasiliyborgov@yandex.ru", ColorPiece.Black, 2500, 41));
+        createPieces.createBlack();
         return players;
     }
 }

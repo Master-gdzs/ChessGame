@@ -5,8 +5,12 @@ public class Spot {
     int y;
 
     public Spot(String x, int y) {
-        this.x = x;
-        this.y = y;
+        if (y < 1 || y > 8) {
+            System.out.println("Position y not valid!");
+        } else {
+            this.x = x;
+            this.y = y;
+        }
     }
 
     public String getX() {
